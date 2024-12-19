@@ -1,0 +1,46 @@
+{
+  "foods": [
+    {
+      "id": "1",
+      "name": "Fried Rice",
+      "description": "The classic choice for Asians",
+      "price": "$22.99",
+      "imageUrl": "https://iili.io/238H2wb.webp"
+    },
+    {
+      "id": "2",
+      "name": "Fries",
+      "description": "Careful, they can be addicting...",
+      "price": "$16.5",
+      "imageUrl": "https://iili.io/2387c12.webp"
+    },
+    {
+      "id": "3",
+      "name": "Burrito",
+      "description": "Super packed with meat!",
+      "price": "$12.99",
+      "imageUrl": "https://iili.io/23vZns9.webp"
+    },
+    {
+      "id": "4",
+      "name": "Pizza",
+      "description": "There's at least a slice of goodness for everyone",
+      "price": "$22.99",
+      "imageUrl": "https://iili.io/23RSecv.md.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Burger",
+      "description": "Made from chicken!",
+      "price": "$16.5",
+      "imageUrl": "https://iili.io/2382Sbn.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Sushi",
+      "description": "As fresh as they can get",
+      "price": "$12.99",
+      "imageUrl": "https://iili.io/23EacyF.md.jpg"
+    }
+  ]
+}
