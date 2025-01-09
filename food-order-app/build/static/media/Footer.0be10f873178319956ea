@@ -1,0 +1,30 @@
+import { useContext } from 'react';
+import { Button, Box } from '@mui/material';
+import itemsContext from '../folder/items-context';
+
+const Footer = () => {
+  const itemCtx = useContext(itemsContext);
+
+  const togglePageHandler = () => {
+    itemCtx.togglePage();
+  };
+
+  return (
+    <Box
+      sx={{
+        width: '100%',
+        textAlign: 'center',
+        padding: '1rem',
+        backgroundColor: '#f8f8f8',
+        position: 'fixed',
+        bottom: 0,
+      }}
+    >
+      <Button variant="contained" color="primary" onClick={togglePageHandler}>
+        {itemCtx.switchPage ? 'Go to Admin Panel' : 'Go to User Page'}
+      </Button>
+    </Box>
+  );
+};
+
+export default Footer;
