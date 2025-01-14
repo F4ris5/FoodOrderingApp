@@ -1,0 +1,14 @@
+services:
+  cors-server:
+    build:
+      context: .
+      dockerfile: cors-server/Dockerfile
+    ports:
+      - "5000:5000"
+
+  food-order-app:
+    build:
+      context: .
+      dockerfile: food-order-app/Dockerfile
+    ports:
+      - "3000:3000"
