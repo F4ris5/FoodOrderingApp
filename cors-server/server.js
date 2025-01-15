@@ -40,6 +40,6 @@ app.post('/upload-image', upload.single('source'), async (req, res) => {
   }
 });
 
-app.listen(PORT, 'food-order-app_cors-server_1', () => {
+app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
