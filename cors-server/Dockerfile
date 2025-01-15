@@ -8,6 +8,6 @@ RUN npm install
 
 COPY ./cors-server /app/cors-server/
 
-EXPOSE 3000
+EXPOSE 3001 5000
 
 CMD ["npm", "run", "start"]
