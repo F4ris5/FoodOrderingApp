@@ -21,7 +21,7 @@ export const ItemsContextProvider = (props) => {
 
   useEffect(() => {
     // Fetch food items from json-server
-    axios.get('http://cors-server-1:3001/foods')
+    axios.get('http://localhost:3001/foods')
       .then(response => {
         setFoods(response.data);
       })
@@ -32,7 +32,7 @@ export const ItemsContextProvider = (props) => {
 
   const addFoodHandler = (newFood) => {
     // Optionally, post the new food to the json-server
-    axios.post('http://cors-server-1:3001/foods', newFood)
+    axios.post('http://localhost:3001/foods', newFood)
       .then(response => {
         setFoods((prevFoods) => [...prevFoods, response.data]);
       })
@@ -43,7 +43,7 @@ export const ItemsContextProvider = (props) => {
 
   const removeFoodHandler = (foodId) => {
     // Optionally, delete the food from the json-server
-    axios.delete(`http://cors-server-1:3001/foods/${foodId}`)
+    axios.delete(`http://localhost:3001/foods/${foodId}`)
       .then(() => {
         setFoods((prevFoods) => prevFoods.filter(food => food.id !== foodId));
       })

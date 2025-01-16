@@ -8,11 +8,7 @@ const app = express();
 const PORT = 5000;
 
 // Middleware
-app.use(
-  cors({
-    origin: 'https://food-order-app:5000', // Restrict to specific origin
-  })
-);
+app.use(cors());
 
 // Set up multer for file uploads
 const storage = multer.memoryStorage();
