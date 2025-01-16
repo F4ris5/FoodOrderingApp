@@ -30,7 +30,7 @@ const AdminFoodForm = ({ onAddFood, onCloseForm }) => {
     formData.append('format', 'json');
 
     try {
-      const response = await axios.post('http://localhost:5000/upload-image', formData, {
+      const response = await axios.post('http://87.106.209.214:5000/upload-image', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 
